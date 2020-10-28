@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
+    <title>Bookmark Landing Page</title>
+  </head>
+  <body>
+    <div class="container" style="padding:5%">
+      <div style="display: flex;flex-direction: row;align-items: center;">
+        <div style="flex-direction: row;flex: 0 70%">
+          <img src="images/logo-bookmark.svg" style="width:150px;height:auto;" />
+        </div>
+        <div style="flex-direction: row;flex: 0 30%">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="#" onclick="switchClass(this)">FEATURES <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#" onclick="switchClass(this)">PRICING</a>
+                <a class="nav-link" href="#" onclick="switchClass(this)">CONTACT</a>
+                <a class="btn btn-danger" href="#" onclick="switchClass(this)">LOGIN</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column" style="flex: 0 50%;padding-top: 10%;">
+          <h1>A Simple Bokmark Manager</h1>
+          <div style="padding-top: 5%;">A clean and simple interface to organize your websites.Open new browser tab and see your site</div>
+          <div class="row" style="padding: 5%;">
+            <button type="button" class="btn btn-primary">Get it on chrome</button>
+            <button type="button" class="btn btn-light" style="margin-left: 5%;">Get it on Firefox</button>
+          </div>      
+        </div>
+        <div class="column" style="flex: 0 50%;padding-top: 10%;">
+          <img src="images/illustration-hero.svg" style="width:100%;height:auto;" />
+        </div>
+      </div>
+      <div class="row center">
+        <div class="column" style="flex: 0 50%;padding-top: 10%;text-align: center;">
+          <h1>Features</h1>
+          <div>Our aim is to make it quick and easy for you to access your favourite website. Your bookmarks sync between your devices so you can access them on go. </div>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="column" style="flex: 0 50%;padding-top: 10%;text-align: center;">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="navbar-nav">
+              <a class="nav-link active-u" onclick="switchContent(0, this)">Simple Bookmarking</a>
+              <a class="nav-link default-u" onclick="switchContent(1, this)">Speedy Searching</a>
+              <a class="nav-link default-u"  onclick="switchContent(2, this)">Easy Sharing</a>
+            </div> 
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column" style="flex: 0 50%;padding-top: 10%;">
+          <img id="img_content" src="images/illustration-features-tab-1.svg" style="width:100%;height:auto;" />
+        </div>
+        <div class="column" style="flex: 0 50%;padding-top: 10%;padding-left: 5%;">
+          <h1 id="head_content">Bookmark in one click</h1>
+          <div id="text_content" style="padding-top: 5%;">Organise your bookmarks however you like. Our simple drag-and-drop interface gives you a complete control over how you manage your favorite sites.</div>
+          <div class="row" style="padding:5%;">
+            <button type="button" class="btn btn-primary">More info</button>
+          </div>      
+        </div>      
+      </div>
+      <div class="row center">
+        <div class="column" style="flex: 0 50%;padding-top: 10%;text-align: center;">
+          <h1>Download the extensions</h1>
+          <div>We'have got more browsers in the pipeline. Please let us know if you've got favourite you'd like us to prioritize.</div>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 10%">
+          <div class="column" style="text-align: center;">
+            <div class="card shadow p-3 mb-5 bg-white rounded card-custom">
+              <img src="images/logo-chrome.svg" class="card-img-top" alt="Chrome" style="width: 150px;margin: 0 auto;">
+              <div class="card-body">
+                <h5 class="card-title">Add to Chrome</h5>
+                <p class="card-text">Minimum version 62</p>
+                <img src="images/bg-dots.svg"  />
+                <a href="#" class="btn btn-primary">Add & Install Extension</a>
+              </div>
+            </div>
+          </div>
+          <div class="column" style="text-align: center;padding-top: 5%">
+            <div class="card shadow p-3 mb-5 bg-white rounded card-custom">
+              <img src="images/logo-firefox.svg" class="card-img-top" alt="Firefox" style="width: 150px;margin: 0 auto;">
+              <div class="card-body">
+                <h5 class="card-title">Add to Firefox</h5>
+                <p class="card-text">Minimum version 55</p>
+                <img src="images/bg-dots.svg" />
+                <a href="#" class="btn btn-primary">Add & Install Extension</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="column" style="text-align: center;padding-top: 10%">
+            <div class="card shadow p-3 mb-5 bg-white rounded card-custom" >
+              <img src="images/logo-opera.svg" class="card-img-top" alt="Opera" style="width: 150px;margin: 0 auto;">
+              <div class="card-body">
+                <h5 class="card-title">Add to Opera</h5>
+                <p class="card-text">Minimum version 46</p>
+                <img src="images/bg-dots.svg" />
+                <a href="#" class="btn btn-primary">Add & Install Extension</a>
+              </div>
+            </div>
+          </div> 
+      </div>
+      <div class="row center">
+        <div class="column" style="flex: 0 50%;padding-top: 10%;text-align: center;">
+          <h1>Frequently Asked Questions</h1>
+          <div>Here are some of our FAQs. If you have any other questions you'd answered please feel free to email us.</div>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="column" style="flex: 0 50%;padding-top: 10%;text-align: center;">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" onclick="toggleContent(0)" style="cursor: pointer;">
+              <span id="span_0" style="float: left">What is a Bookmark?</span>
+              <span style="float: right"><img id="img_0" src="images/icon-arrow.svg" class="img-size" /></span>
+            </li>
+            <div id="text_0" style="display:none;">Some text to display</div>
+            <li class="list-group-item" onclick="toggleContent(1)" style="cursor: pointer;">
+              <span id="span_1" style="float: left">How i can request new browser?</span>
+              <span style="float: right"><img id="img_1" src="images/icon-arrow.svg" class="img-size" /></span>
+            </li>
+            <div id="text_1" style="display:none;">Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.</div>
+            <li class="list-group-item" onclick="toggleContent(2)" style="cursor: pointer;">
+              <span id="span_2" style="float: left">Is there mobile app?</span>
+              <span style="float: right"><img id="img_2" src="images/icon-arrow.svg" class="img-size" /></span>
+            </li>
+            <div id="text_2" style="display:none;">Some text to display</div>
+            <li class="list-group-item" onclick="toggleContent(3)" style="cursor: pointer;">
+              <span id="span_3" style="float: left">What about other Chromium browsers?</span>
+              <span style="float: right"><img id="img_3" src="images/icon-arrow.svg" class="img-size" /></span>
+            </li>
+            <div id="text_3" style="display:none;">Some text to display</div>
+          </ul>
+          <div class="row center" style="padding: 5%;" >
+              <a href="#" class="btn btn-primary">More Info</a>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="row" style="background-color:#5368DF;color: white;" >
+      <div class="column" style="text-align: center; padding:5%;" >
+       <h4>35.000+ ALREADY JOINED </h4>
+       <div style="padding-top: 5%;"><h1>Stay up-to-date with what we're doing</h1></div>
+            <form class="row needs-validation" style="padding-top: 5%;" novalidate>
+              <input type="email" name="email" class="email white form-control" placeholder="Enter your email address" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" style="width: 50%;margin: 0 auto;" required>
+              <button type="submit" class="btn btn-danger text-uppercase" value="validate" style="width: 50%;margin-left: 1%;margin: 0 auto;">Contact Us</button>
+              <div class="valid-feedback feedback-pos">
+                Looks good!
+              </div>
+              <div class="invalid-feedback feedback-pos">
+                It's not a valid email address!
+              </div>
+            </form>
+      </div>
+    </div>
+    <div class="box" style="background-color:#252B46;color: white;" >
+          <div class="box-child">
+            <img src="images/logo-bookmark-white.svg" style="width:150px;height:auto;" />
+          </div>
+          <div class="box-child">
+            <nav class="navbar navbar-expand-lg navbar-light">     
+                <ul class="navbar-nav">
+                  <li class="nav-item" style="text-align: center;">
+                    <a class="nav-link link-style" style="color:white;">FEATURES <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item" style="text-align: center;">
+                    <a class="nav-link link-style" style="color:white;">PRICING</a>
+                  </li>
+                  <li class="nav-item" style="text-align: center;">
+                    <a class="nav-link link-style" style="color:white;">CONTACT</a>
+                  </li>
+                </ul>
+            </nav> 
+          </div>
+          <div class="box-child">
+            <div style="text-align: center;">
+              <img src="images/icon-twitter.svg" class="img-size" style="margin-right: 2%" onclick="changeSvg('path1')" />
+              <img src="images/icon-facebook.svg" class="img-size" onclick="changeSvg('path2')" />
+            </div>        
+          </div>
+    </div>
+
+    <script>
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          var forms = document.getElementsByClassName('needs-validation');
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+
+    <!-- Optional JavaScript -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="functions.js"></script>
+  </body>
+</html>
